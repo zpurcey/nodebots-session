@@ -724,7 +724,7 @@ void setup()
   Firmata.attach(START_SYSEX, sysexCallback);
   Firmata.attach(SYSTEM_RESET, systemResetCallback);
 
-  Firmata.begin(57600);
+  Firmata.begin(115200);
   systemResetCallback();  // reset to default config
 
   ws2812_initialise();
